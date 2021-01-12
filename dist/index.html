@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Currency Converter</h1>
+        <div class="content">
+            <div class="block">
+                <h3 class="block__title">From</h3>
+                <select class="select" name="from">
+                    <option value="RUR">RUR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input class="field" name="value-from" type="text">
+            </div>
+            <div class="block">
+                <h3 class="block__title">To</h3>
+                <select class="select" name="to">
+                    <option value="RUR">RUR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input class="field" name="value-to" type="text" disabled>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(141, 136, 136);
+    overflow: hidden;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18px;
+}
+
+input, select {
+    outline:none;
+    border: none;
+    border-radius: unset;
+    background: #fff;
+
+    &:active, &:hover, &:focus {
+        outline:none;
+    }
+}
+
+input:disabled {
+    background: #fff;
+}
+
+.img {
+    width: 100%;
+}
+
+.container {
+    width: 1248px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title {
+    width: fit-content;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: #000;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: -8px;
+    }
+}
+
+.content {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    margin-right: 40px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &:last-child {
+        margin-right: unset;
+    }
+
+    &__title {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.select {
+    margin-top: 10px;
+}
+
+.field {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 35px;
+}
