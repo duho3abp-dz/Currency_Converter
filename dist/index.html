@@ -9,26 +9,23 @@
 <body>
     <div class="container">
         <h1 class="title">Currency Converter</h1>
-        <div class="content">
+        <form class="content">
             <div class="block">
                 <h3 class="block__title">From</h3>
-                <select class="select" name="from">
+                <select class="select" name="from" data-select-from>
                     <option value="RUR">RUR</option>
-                    <option value="EUR">EUR</option>
-                    <option value="USD">USD</option>
                 </select>
-                <input class="field" name="value-from" type="text">
+                <input class="field" name="value-from" type="text" data-input-from>
             </div>
             <div class="block">
                 <h3 class="block__title">To</h3>
-                <select class="select" name="to">
-                    <option value="RUR">RUR</option>
-                    <option value="EUR">EUR</option>
+                <select class="select" name="to" data-select-to>
                     <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
                 </select>
-                <input class="field" name="value-to" type="text" disabled>
+                <input class="field" name="value-to" type="text" data-input-to disabled>
             </div>
-        </div>
+        </form>
     </div>
     <script src="app.js"></script>
 </body>

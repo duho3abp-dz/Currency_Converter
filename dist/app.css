@@ -197,13 +197,11 @@ input:disabled {
   width: 100%; }
 
 .container {
-  width: 1248px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto; }
+  align-items: center; }
 
 .title {
   width: fit-content;
@@ -243,6 +241,22 @@ input:disabled {
   width: 100%;
   margin-top: 20px;
   font-size: 35px; }
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+  .block {
+    width: 60%;
+    margin-right: unset;
+    margin-bottom: 40px; }
+    .block:last-child {
+      margin-bottom: unset; } }
+
+@media screen and (max-width: 500px) {
+  .block {
+    width: 90%; } }
 
 
 /*# sourceMappingURL=app.css.map*/
